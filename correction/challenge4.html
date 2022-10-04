@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Js basics</title>
+    </head>
+    <body>
+        <script>
+            let firstValue = prompt("Tapes un nombre");
+            const operator = prompt("Tapes un opérateur");
+            let secondValue = prompt("Tapes un deuxième nombre");
+
+            firstValue = parseInt(firstValue);
+            secondValue = parseInt(secondValue);
+
+            // définition de ma fonction calculator
+            function caluculator(operator, firstValue, secondValue) {
+                
+                // utiliser un switch case permet de gérer de multiple cas de figure (ici nos différents opérateurs)
+                switch (operator) {
+                    case "+":
+                        console.log(firstValue + secondValue);
+                        break; // permet de sortir du switch quand la condition est satisfaite
+                    case "-":
+                        console.log(firstValue - secondValue);
+                        break;
+                    case "*":
+                        console.log(firstValue * secondValue);
+                        break;
+                    case "/":
+                        console.log(firstValue / secondValue);
+                        break;
+                    default: // bien penser à utiliser un default case dans le cas où aucunes des conditions du dessus sont satisfaites
+                        console.log("Invalid operator");
+                        break;
+                }
+            }
+
+            // Appel de ma fonction calculator
+            caluculator(operator, firstValue, secondValue)
+
+        </script>
+    </body>
+</html>

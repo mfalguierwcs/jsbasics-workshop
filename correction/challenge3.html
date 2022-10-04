@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js basics</title>
+</head>
+<body>
+    <script>
+        let firstValue = prompt("Tapes un chiffre");
+        const operator = prompt("Tapes ton opérateur")
+        let secondValue = prompt("Tapes ton deuxième chiffre")
+
+        firstValue = parseInt(firstValue)
+        secondValue = parseInt(secondValue)
+
+        // conditionnelle simple if else
+        if (operator === "+") {
+            console.log(firstValue + secondValue)
+        } else {
+            console.log(firstValue - secondValue)
+        }
+        
+    </script>
+</body>
+</html>

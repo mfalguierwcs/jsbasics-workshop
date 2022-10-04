@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js basics</title>
+</head>
+<body>
+    <script>
+        let firstValue = prompt("Tapes un chiffre");
+        const operator = prompt("Tapes ton opérateur")
+        let secondValue = prompt("Tapes ton deuxième chiffre")
+
+        // j'essaye d'aditionner des chaines de caractères et non des nombres du coup je concatène au lieu de vraiment additionner
+        console.log(firstValue + secondValue) 
+
+         
+        // pour transformer une chaine de caractère en nombre je peux utiliser la fonction parseInt()
+        firstValue = parseInt(firstValue)
+        secondValue = parseInt(secondValue)
+
+        // mon addition devient bonne
+        console.log(firstValue + secondValue)
+        
+    </script>
+</body>
+</html>
